@@ -6,6 +6,10 @@ API calls have a **_1s timeout_** by default, for UI showcase purposes.
 
 If you wish to remove it, just comment out code in `api/weather/handlers.ts` at lines [38-43].
 
+## 🌐 Hosting
+
+Web app is available at: https://dactyl-weather-app.web.app/
+
 ## 🚀 How to run
 
 1. Copy `.env.example` into `.env`, otherwise ENV validation will fail and throw an Error.
