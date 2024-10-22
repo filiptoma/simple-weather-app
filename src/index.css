@@ -1,0 +1,66 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "@fontsource/barlow/300.css";
+@import "@fontsource/barlow/400.css";
+@import "@fontsource/barlow/500.css";
+@import "@fontsource/barlow/600.css";
+
+@layer base {
+  :root {
+    --color-primary-100: #ddf2fd;
+    --color-primary-200: #b7e4fb;
+    --color-primary-300: #8bd4f9;
+    --color-primary-400: #4cbdf5;
+    --color-primary-500: #0da0ea;
+    --color-primary-600: #0c92d5;
+    --color-primary-700: #0a81bc;
+    --color-primary-800: #086796;
+    --color-primary-900: #06496a;
+    --color-secondary-100: #ebebeb;
+    --color-secondary-200: #d6d6d6;
+    --color-secondary-300: #c2c2c2;
+    --color-secondary-400: #adadad;
+    --color-secondary-500: #999999;
+    --color-secondary-600: #7a7a7a;
+    --color-secondary-700: #5c5c5c;
+    --color-secondary-800: #3d3d3d;
+    --color-secondary-900: #1f1f1f;
+    --color-background: #ffffff;
+    --color-foreground: #000000;
+    --color-input: #9f9f9f;
+
+    --text-line-height: 120%;
+    --text-letter-spacing: 0rem;
+    --text-font-size-xs: 0.625rem;
+    --text-font-size-sm: 0.875rem;
+    --text-font-size-base: 1rem;
+    --text-font-size-lg: 1.125rem;
+    --text-font-size-xl: 1.5rem;
+    --text-font-size-2xl: 4rem;
+    --text-font-size-3xl: 5rem;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    @apply font-sans text-base font-normal;
+  }
+  h1 {
+    @apply text-2xl font-medium;
+  }
+  h2 {
+    @apply text-lg font-medium;
+  }
+  h3 {
+    @apply font-medium;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
